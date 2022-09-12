@@ -1,4 +1,4 @@
-all: cpu-golang mem threads io
+all: cpu
 
 clean:
 	rm -f bin/cpu bin/mem bin/threads bin/io
