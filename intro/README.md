@@ -52,6 +52,3 @@ Under Linux you can disable ASLR, without using a debugger, in (at least)  two w
   root to do this and this change has (a non-permanent) effect on the
   whole system, which is something you probably don't want. I use this
   one only inside VMs.
-
-
-
