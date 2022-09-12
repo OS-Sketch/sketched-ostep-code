@@ -1,9 +1,12 @@
-all: cpu mem threads io
+all: cpu-clang mem threads io
 
 clean:
 	rm -f bin/cpu bin/mem bin/threads bin/io
 
-cpu: cpu.c common.h
+bin:
+	mkdir bin
+
+cpu: cpu.c common.h bin
 	gcc -o bin/cpu cpu.c -Wall
 
 mem: mem.c common.h

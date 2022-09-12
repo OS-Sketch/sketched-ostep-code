@@ -4,6 +4,7 @@
 #include <sys/time.h>
 #include <sys/stat.h>
 #include <assert.h>
+#include <stddef.h>
 
 double GetTime() {
     struct timeval t;
@@ -15,7 +16,7 @@ double GetTime() {
 void Spin(int howlong) {
     double t = GetTime();
     while ((GetTime() - t) < (double) howlong)
-	; // do nothing in loop
+    ; // do nothing in loop
 }
 
 #endif // __common_h__
