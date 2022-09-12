@@ -1,16 +1,16 @@
 all: cpu mem threads io
 
 clean:
-	rm -f cpu mem threads io
+	rm -f bin/cpu bin/mem bin/threads bin/io
 
 cpu: cpu.c common.h
-	gcc -o cpu cpu.c -Wall
+	gcc -o bin/cpu cpu.c -Wall
 
 mem: mem.c common.h
-	gcc -o mem mem.c -Wall
+	gcc -o bin/mem mem.c -Wall
 
 threads: threads.c common.h common_threads.h
-	gcc -o threads threads.c -Wall -pthread
+	gcc -o bin/threads threads.c -Wall -pthread
 
 io: io.c common.h
-	gcc -o io io.c -Wall
+	gcc -o bin/io io.c -Wall
