@@ -9,10 +9,10 @@ bin:
 cpu: cpu.c common.h bin
 	gcc -o bin/cpu cpu.c -Wall
 
-mem: mem.c common.h
+mem: mem.c common.h bin
 	gcc -o bin/mem mem.c -Wall
 
-threads: threads.c common.h common_threads.h
+threads: threads.c common.h common_threads.h bin
 	gcc -o bin/threads threads.c -Wall -pthread
 
 io: io.c common.h
