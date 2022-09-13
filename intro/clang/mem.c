@@ -12,7 +12,8 @@ int main(int argc, char *argv[]) {
   p = malloc(sizeof(int));
   assert(p != NULL);
   printf("(%d) addr pointed to by p: %p\n", (int)getpid(), p);
-  *p = atoi(argv[1]); // assign value to addr stored in p
+  // assign value to addr stored in p
+  *p = atoi(argv[1]);
   while (1) {
     Spin(1);
     *p = *p + 1;
