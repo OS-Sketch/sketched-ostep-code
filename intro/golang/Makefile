@@ -6,5 +6,5 @@ clean:
 bin:
 	mkdir bin
 
-cpu: cpu.go
+cpu: cpu.go bin
 	go build --o bin
