@@ -1,4 +1,4 @@
-all: cpu-clang mem threads io
+all: cpu mem threads io
 
 clean:
 	rm -f bin/cpu bin/mem bin/threads bin/io
