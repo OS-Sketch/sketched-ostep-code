@@ -17,7 +17,7 @@ main(int argc, char *argv[])
     } else {
         // parent goes down this path (original process)
         printf("hello, I am parent of %d (pid:%d)\n",
-	       rc, (int) getpid());
+           rc, (int) getpid());
     }
     return 0;
 }
